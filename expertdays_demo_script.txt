@@ -1,0 +1,80 @@
+_Intro_
+You should have your own login/password
+A personal org is created for you during Technical Sales Summit, TSS
+During expert days each city will have an org, created by Peter Andersson, peter.andersson@suse.com
+
+
+Hint:
+cf help -a
+
+Login to CAP
+cf login -a  https://api.cap.suselinux.info --skip-ssl-validation -u peter2
+cf create-space test
+cf target -o "peter2org" -s "test"
+
+Lab 1, first push 
+cd 03-push/web-app
+cat config.ru
+cf push
+
+cf apps
+
+Lab 2, modify app 
+vi config.ru
+log into https://stratos.cap.suselinux.info
+
+Lab 3, logs and shell
+cd ../worker-app/
+cf push
+cf logs worker-app
+cf ssh worker-app
+	ps -ef
+	find /
+	ctrl-d
+
+Lab 4 Scaling and autohealing 
+cd /05-resilience/imperfect-app
+modify manifest.yml
+	  instances: 2
+cf push
+log in to https://stratos.cap.suselinux.info
+	scale up to 4 instances
+
+have 2 screens next to each other:
+stratos and imperfect app
+crash and show stratos
+
+Lab 5, smooth deployment and routes
+host whatever.cap.suselinux.info
+host bla.cap.it-slav.net
+
+modify config.ru
+	<h1>v1</h1>
+Example mod-manifest.yaml
+applications:
+- name: web-app_v1
+  memory: 64M
+  instances: 1
+  host: myapp
+  domain: cap.it-slav.net
+cf push -f mod-manifest.yml
+scale up to 4 instances
+
+Modify config.ru
+        <h1>v2</h1>
+modify mod-manifest.yml
+- name: web-app_v2
+cf push -f mod-manifest.yml
+
+smoothly transit
+
+
+Lab 6, stateful app
+cf marketplace
+show marketplace in stratos
+cf push --no-start
+cf create-service redis 4-0-10 stateful-app-redis
+cf services
+cf bind-service stateful-app stateful-app-redis
+cf env stateful-app
+

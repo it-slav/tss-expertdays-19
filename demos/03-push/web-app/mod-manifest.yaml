@@ -1,0 +1,7 @@
+applications:
+- name: web-app_v1
+  memory: 64M
+  instances: 1
+  host: smooth_deployment
+  domain: cap.it-slav.net
+
