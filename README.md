@@ -1,2 +1,2 @@
-# TSS and expertdays -19 CAP demos
+# TSS and CAP demos
 Based on labs for the Cloud Foundry Zero To Hero training course
