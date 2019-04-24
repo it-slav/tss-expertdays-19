@@ -1,5 +1,5 @@
 _Intro_
-You should have your own login/password
+You should have your own login/password and in an email
 A personal org is created for you during Technical Sales Summit, TSS
 During expert days each city will have an org, created by Peter Andersson, peter.andersson@suse.com
 
@@ -8,9 +8,9 @@ Hint:
 cf help -a
 
 Login to CAP
-cf login -a  https://api.cap.suselinux.info --skip-ssl-validation -u peter2
+cf login -a  https://api.cap.suselinux.info --skip-ssl-validation -u <USERNAME>
 cf create-space test
-cf target -o "peter2org" -s "test"
+cf target -o "YOURORG" -s "test"
 
 Lab 1, first push 
 cd 03-push/web-app
