@@ -88,3 +88,7 @@ cf create-service redis 4-0-10 stateful-app-redis
 cf services
 cf bind-service stateful-app stateful-app-redis
 cf env stateful-app
+
+
+CLEAN UP!!!
+cf delete -rf <APP-NAME>
