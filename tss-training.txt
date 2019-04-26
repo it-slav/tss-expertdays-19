@@ -8,6 +8,9 @@ git clone https://github.com/it-slav/tss-expertdays-19.git
 
 All the labs are in: tss-expertdays-19/demos/
 
+PLEASE, try not to break the system. With 100s of running apps, things can go wrong. Standing on Expert days with a broken
+demo system is not fun.
+
 Hint:
 cf help -a
 
