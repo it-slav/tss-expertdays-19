@@ -94,5 +94,7 @@ cf env stateful-app
 
 
 CLEAN UP!!!
+cf apps, list apps
+cf services, lists services
 cf delete -r -f <APP-NAME>
-Find how to remove your running service.
+Find out how to remove your running service, hit cf help -a
