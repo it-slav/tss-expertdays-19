@@ -66,7 +66,7 @@ applications:
 - name: web-app_v1
   memory: 64M
   instances: 2
-  host: myapp
+  host: <CHANGE ME TO SOMETHING UNIQUE>
   domain: cap.it-slav.net
 cf push -f mod-manifest.yml
 scale up to 4 instances either command line or stratos
