@@ -57,8 +57,8 @@ try 'watch -n1  cf apps' and 'watch -n1 cf app imperfect-app'
 Lab 5, smooth deployment and routes
 cd 03-push/web-app
 Wildcard domains:
-run host whatever.cap.suselinux.info, run host somethingelse.cap.suselinux.info (hint use ping in win)
-run host bla.cap.it-slav.net, run host hello.cap.it-slav.net
+run command 'host whatever.cap.suselinux.info', run command 'host somethingelse.cap.suselinux.info' (hint use ping in win)
+run command 'host bla.cap.it-slav.net', run command 'host hello.cap.it-slav.net'
 
 
 NOTE! Use unique hostname, i.e. your org
