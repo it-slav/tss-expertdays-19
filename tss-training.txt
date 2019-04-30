@@ -55,6 +55,7 @@ crash (by click crash the app) and look at stratos to see how apps are restarted
 try 'watch -n1  cf apps' and 'watch -n1 cf app imperfect-app'
 
 Lab 5, smooth deployment and routes
+cd 03-push/web-app
 Wildcard domains:
 run host whatever.cap.suselinux.info, run host somethingelse.cap.suselinux.info (hint use ping in win)
 run host bla.cap.it-slav.net, run host hello.cap.it-slav.net
@@ -73,7 +74,7 @@ applications:
   domain: cap.it-slav.net
 
 cf push -f mod-manifest.yml
-scale up to 4 instances either command line (cf scale -i <appname>) or stratos
+scale up to 4 instances either command line (cf scale -i n <appname>) or stratos
 
 
 
