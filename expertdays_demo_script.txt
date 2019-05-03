@@ -13,7 +13,7 @@ cf create-space test
 cf target -o "YOURORG" -s "test"
 
 Demo 1, deploy DizzyLizard from git
-Login to stratos
+Login to stratos https://stratos.cap.suselinux.info
 Click->Applications
 Click->Top right corner-arrow up
 
