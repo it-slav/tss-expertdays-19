@@ -1,7 +1,6 @@
 _Intro_
 You should have your own login/password and in an email
 A personal org is created for you during Technical Sales Summit, TSS
-During expert days each city will have an org, created by Peter Andersson, peter.andersson@suse.com
 
 Clone this repo:
 git clone https://github.com/it-slav/tss-expertdays-19.git
