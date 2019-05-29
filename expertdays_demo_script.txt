@@ -34,3 +34,5 @@ Leave the rest
 Click->Deploy
 
 Follow the logstream and explain what is happening
+
+Remove the app when done
