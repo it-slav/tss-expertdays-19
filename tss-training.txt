@@ -53,6 +53,8 @@ stratos and imperfect app
 crash (by click crash the app) and look at stratos to see how apps are restarted
 try 'watch -n1  cf apps' and 'watch -n1 cf app imperfect-app'
 
+NOTE! Some users has reported that the app never recover. If you look into the logs (cf logs <appname>) it indicates that the app run out of memory. Solve it bu modify the manifest.yaml and give the app 64M instead of 32m
+
 Lab 5, smooth deployment and routes
 cd 03-push/web-app
 Wildcard domains:
