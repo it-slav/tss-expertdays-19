@@ -5,7 +5,7 @@ GEM
     eventmachine (1.2.5)
     mustermann (1.0.2)
     newrelic_rpm (5.0.0.342)
-    rack (2.0.4)
+    rack (2.0.8)
     rack-protection (2.0.1)
       rack
     sinatra (2.0.1)
